@@ -1,0 +1,22 @@
+.textField {
+   color: 'white';
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+}
+
+h4{
+   margin-right: 15px;
+}
+
+.config {
+
+   &__toggle{
+      display: flex;  
+   }
+
+   &__fields{
+      display: flex;
+      justify-content: space-between;
+   }
+}

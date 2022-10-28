@@ -1,0 +1,76 @@
+.chain {
+   margin-top: 8px;
+
+   &__base {
+      display: flex;
+   }
+
+   &__info {
+      width: 65%;
+      align-self: center;
+
+      &__item {
+         width: 98%;
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   &__status {
+      width: 15%;
+
+      &__info {
+         height: 30%;
+         justify-self: center;
+      }
+
+      &__timer {
+         height: 55%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         grid-area: cronometro;
+
+         &__wrapper {
+            align-items: center;
+            background-color: #7687a1;
+            border-radius: 10px;
+            box-shadow: 2px 4px 4px #0000009f;
+            box-sizing: border-box;
+            display: flex;
+            font-size: 5rem;
+            justify-content: center;
+            margin-bottom: 24px;
+            padding: 16px 12px;
+         }
+      }
+   }
+
+   &__button {
+      width: 05%;
+      display: inline-grid;
+      justify-self: center;
+   }
+
+   &__config {
+      width: 20%;
+   }
+}
+
+.first {
+   display: flex;
+
+   &__temperatures {
+      width: 90%;
+      
+      &__items {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-between;
+      }
+
+      &__item {
+         width: 15%;
+      }
+   }
+}

@@ -1,0 +1,13 @@
+{
+   "chain": 0,
+   "created_at": null,
+   "frequency_pv": 0,
+   "frequency_sp": 0,
+   "inverter_status": false,
+   "motor_start": 0,
+   "proccess_id": null,
+   "temp_max": 0,
+   "temperatures": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+   "wait_to_stop": 0,
+   "water_valves": 0
+}
