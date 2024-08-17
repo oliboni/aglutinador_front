@@ -44,19 +44,19 @@ export default function Home() {
                <div className={styles.chain__info}>
                   <div className={styles.chain__info__item}>
                      <MyGauge
-                        score={data.frequency_pv}
+                        score={data.data.frequency_pv}
                         textComplement='Hz'
                         strokeColor='##3e98c7'
                         maxValue={100}
                      />
                      <MyGauge
-                        score={data.frequency_sp}
+                        score={data.data.frequency_sp}
                         textComplement='Hz'
                         strokeColor='##3e98c7'
                         maxValue={100}
                      />
                      <MyGauge
-                        score={data.chain}
+                        score={data.data.chain}
                         textComplement='A'
                         strokeColor='##3e98c7'
                         maxValue={100}
@@ -77,7 +77,7 @@ export default function Home() {
                         variant='h6'
                         textAlign={'center'}
                         margin={2}>
-                        {data.inverter_status ? 'LIGADO' : 'DESLIGADO'}
+                        {data.data.inverter_status ? 'LIGADO' : 'DESLIGADO'}
                      </Typography>
                   </div>
                   <div className={styles.chain__status__timer}>
@@ -128,7 +128,7 @@ export default function Home() {
                   Temperaturas
                </Typography>
                <div className={styles.first__temperatures__items}>
-                  {data.temperatures.map((temp, index) => (
+                  {data.data.temperatures.map((temp, index) => (
                      <Temperatures
                         className={styles.first__temperatures__item}
                         temp={temp}
